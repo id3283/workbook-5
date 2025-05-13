@@ -23,14 +23,20 @@ public class Main {
         dr = new Doctor("David", 27, "Psychaitry");
         people.add(dr);
 
+        if(dr instanceof Object) {
+            System.out.println("Yup");
+        }
+
         for(Person p: people) {
-            if(p instanceof Developer) {
-                System.out.println(  ((Developer)p).getPreferredLanguage()  );
-            }
-            else if(p instanceof Doctor) {
-                Doctor dr2 = (Doctor)p;
-                System.out.println( dr2.getMedicalSpeciality() );
-            }
+            System.out.println("p is an instance of class: " + p.getClass() + " " + p.toString());
+//            if(p instanceof Developer) {
+//                System.out.println("Here p is an instance of ");
+//                System.out.println(  ((Developer)p).getPreferredLanguage()  );
+//            }
+//            else if(p instanceof Doctor) {
+//                Doctor dr2 = (Doctor)p;
+//                System.out.println( dr2.getMedicalSpeciality() );
+//            }
         }
 
     }

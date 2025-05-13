@@ -19,6 +19,7 @@ public class Doctor extends Person {
         return medicalSpeciality;
     }
 
+
     @Override
     public String getSpecialty() {
         return "My medical speciality is: " + this.medicalSpeciality;
