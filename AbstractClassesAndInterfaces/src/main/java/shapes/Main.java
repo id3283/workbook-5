@@ -1,23 +1,16 @@
 package shapes;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<IShape> shapes = new ArrayList<>();
+        AbstractShape myShape;
 
-        Circle circle = new Circle(1);
-        shapes.add(circle);
+        myShape = new Rectangle(3,2);
+        myShape.calculateArea();
 
-        Square square = new Square(2);
-        shapes.add(square);
-
-        double totalArea = 0;
-        for (IShape shape: shapes) {
-            totalArea += shape.calculateArea();
-        }
-
-        System.out.println("The total area for all shapes is: " + totalArea);
+        myShape = new Circle(3);
+        myShape.calculateArea();
     }
-
 }

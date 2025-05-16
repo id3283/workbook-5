@@ -1,6 +1,6 @@
 package shapes;
 
-public class Circle extends AbstractShape{
+public class Circle implements IShape{
     double radius;
 
     public Circle(double radius) {
