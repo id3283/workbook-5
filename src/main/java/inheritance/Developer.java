@@ -5,8 +5,18 @@ public class Developer extends Person {
     String primaryLanguage = "Java";
 
     public Developer() {
-        super("Danielle");
-        // sneak invisible parent default constructor being called here... 🤷🏼‍♂️
-        System.out.println("In Developer ctor.");
+        super();
+        // sneaky invisible parent default constructor being called here (first)...🤯
+        // System.out.println("In Developer ctor.");
+    }
+
+
+    @Override
+    public void work() {
+        System.out.println("I'm coding away...");
+    }
+
+    public void consumeCaffeine() {
+        System.out.println("Chug, chug, chug...");
     }
 }
