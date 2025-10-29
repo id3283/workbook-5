@@ -1,14 +1,12 @@
-package inheritance;
+package abstractclasses;
 
 public class Sailor extends Person {
     String boatName;
 
-    public Sailor(String name, String boat) {
-        super(name);
-
-        this.boatName = boat;
+    @Override
+    public void work() {
+        System.out.println("I'm sailing for work (dreaamm job!)");
     }
-
 
 //    public void sail() {
 //        System.out.println("🎵Sailing... it takes me away to where I'm goin'... 🎵");

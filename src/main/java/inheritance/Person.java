@@ -12,9 +12,9 @@ public class Person {
         this.name = personName;
     }
 
-    public Person() {
-//        System.out.println("In person default constructor.");
-    }
+//    public Person() {
+////        System.out.println("In person default constructor.");
+//    }
 
     public String getName() {
         return this.name;

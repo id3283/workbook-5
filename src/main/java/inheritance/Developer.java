@@ -1,17 +1,10 @@
 package inheritance;
 
-public class Developer extends Person {
-
-    String primaryLanguage = "Java";
-
-    public Developer() {
-        super();
-        // sneaky invisible parent default constructor being called here (first)...🤯
-        // System.out.println("In Developer ctor.");
-    }
+public class Developer   {
 
 
-    @Override
+
+
     public void work() {
         System.out.println("I'm coding away...");
     }

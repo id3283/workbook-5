@@ -1,17 +1,12 @@
 package inheritance;
 
-public class Dentist extends Person{
+public class Dentist{
 
 
-    @Override
-    public String getName() {
-        return "Dr. " + this.name;
+
+
+    public void causePain() {
+        System.out.println("This is gonna hurt...");
     }
-
-    @Override
-    public void work() {
-        System.out.println("I'm drilling away...");
-    }
-
 
 }
